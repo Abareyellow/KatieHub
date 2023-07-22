@@ -1,0 +1,69 @@
+body {
+  background-image: url("../images/175.jpg");
+  background-attachment: fixed;
+}
+
+.design {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+}
+
+
+h1 {
+  display: block;
+  text-align: center;
+  border: 3px solid hotpink;
+  background-color: lightyellow;
+  margin: auto;
+  margin-top: 15px;
+  width: 40%;
+}
+
+article {
+	border: 3px solid hotpink;
+  background-color: lightyellow;
+	margin: 1em;
+	padding: 1em;
+  width: 500px
+}
+
+table, td {
+	border: 1px solid black;
+  text-align: center;
+}
+
+button {
+	display: block;
+  margin-bottom: 10px;
+}
+
+.clickable {
+	color: blue;
+	text-decoration: underline;
+}
+
+.clickable:hover, img {
+	cursor: pointer;
+}
+
+input {
+	width: 3em;
+}
+
+.text {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.text input {
+  width: 5em;
+  height: 1.75em;
+}
+
+label {
+  display: block;
+}

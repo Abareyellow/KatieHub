@@ -1,0 +1,76 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Banananade Stand</title>
+    <link rel="stylesheet" href="../styles/exercise20.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script defer src="scripts/exercise20.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet"> 
+ </head>
+ <body>
+   <nav>
+    <a href="index.html" class="icon">Katie Hub</a>
+    <div class="right">
+      <div class="dropdown">
+        <button class="dropdown-btn">My Projects</button>
+        <div class="dropdown-options">
+          <a href="#">Shiny Pokemon Gallery</a>
+        </div>
+      </div>
+      <!--<a href="#">My Project</a>-->
+      <div class="dropdown">
+        <button class="dropdown-btn">School Projects</button>
+        <div class="dropdown-options">
+          <a href="bananaade.html">Bananaade</a>
+          <a href="#">Appstate QEP</a>
+          <a href="#">Pizza Shanty</a>
+        </div>
+      </div>
+      <a href="aboutme.html">About Me</a>
+    </div>
+  </nav>
+    <h1>World's BEST Bananaade</h1>
+	  <div class="design">
+      <article>
+        <h2>Add Ingredients</h2>
+	     <label for="numBananas">
+	       <img src='../images/plus_light.png'>
+		     <span class='clickable'>Add bananas</span>
+		     <input id='numBananas' class='hide_me'></input>
+		  </label>
+		  <label for="numWater">
+	      <img src='../images/plus_light.png'>
+		    <span class='clickable'>Add gallons of water</span>
+		    <input id='numWater' class='hide_me'></input>
+		 </label>
+		 <label for="numSugar">
+	      <img src='../images/plus_light.png'>
+		    <span class='clickable'>Add cups of sugar</span>
+		    <input id='numSugar' class='hide_me'></input>
+		  </label>
+		  <label for="numGlasses">
+	      <img src='../images/plus_light.png'>
+		    <span class='clickable'>Add empty glasses</span>
+		    <input id='numGlasses' class='hide_me'></input>
+		  </label>
+      <label for="changePrice">
+        <img src='../images/plus_light.png'>
+		    <span class='clickable'>Change price</span>
+		    <input id='changePrice' class='hide_me price'></input>
+      </label>
+	   </article>
+	
+	   <article>
+	    <h2>Controls</h2>
+	    <button class="banana">Make Bananaade</button>
+	    <button class="banana">Sell Bananaade</button>
+      <div class="text">
+        <input id='sellMore'></input>
+        <button class="move banana">Sell More Bananaade</button>
+      </div>
+	    </article>
+    </div>
+ </body>
+</html>

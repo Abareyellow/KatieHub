@@ -1,0 +1,37 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-btn {
+  background-color: #FFFF99;
+  border: none;
+  font-family: 'Special Elite', cursive;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  margin: 0;
+  font-size: 16px;
+  display: block;
+  background-color: #ffffd2;
+  text-decoration: none;
+  padding:20px 40px;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ffff75;
+  border-radius:5px;
+}
+
+
