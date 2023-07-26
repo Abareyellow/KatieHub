@@ -113,7 +113,7 @@ function makeListForLanguage(data, language, prof) {
 }
 
 function buttons() {
-  let buttons = $('button');
+  let buttons = $('.search');
   let select = document.getElementsByTagName('select');
   buttons[0].addEventListener('click', function() { getLanguage(languageURL, select[0].value, select[1].value) }, false);
   
