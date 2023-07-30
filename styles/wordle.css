@@ -1,0 +1,38 @@
+body {
+  background-color: white;
+}
+
+section {
+  border: 8px solid lime;
+  border-radius: 10px;
+  margin: 15px auto;
+  width: 45%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.letters {
+  width: 30px;
+  height: 30px;
+}
+
+.placed-letters {
+  margin-bottom: 20px;
+}
+
+.valid-letters {
+  margin-bottom: 20px;
+}
+
+.bad-letters {
+  margin-bottom: 20px;
+}
+
+h1, p, h4 {
+  font-family: 'Open Sans', sans-serif;
+}

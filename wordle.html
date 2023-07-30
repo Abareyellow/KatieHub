@@ -8,7 +8,8 @@
   <link href="styles/style.css" rel="stylesheet" type="text/css" />
   <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <link href="styles/wordle.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -34,12 +35,41 @@
       <a href="aboutme.html">About Me</a>
     </div>
   </nav>
+  <section>
+    <h1>Wordle Helper</h1>
+    <div class="placed-letters">
+      <h4>Placed Letters</h4>
+      <p>Place the letters in correct order as they appear (Green Tiles)</p>
+      <div class="word">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+      </div>
+    </div>
+    <div class="valid-letters">
+      <h4>Valid Letters</h4>
+      <p>Any letters that are in the word but not in the correct order (Yellow Tile)</p>
+      <div class="word">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+        <input type="text" class="letters">
+      </div>
+    </div>
+    <div class="bad-letters">
+      <h4>Bad Letters</h4>
+      <p>Letters not in the word (Grey Tiles)</p>
+      <input type="text">
+    </div>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
+    <button>Enter</button>
+  </section>
+
+  <div class="box">
+  </div>
 </body>
 
 </html>
