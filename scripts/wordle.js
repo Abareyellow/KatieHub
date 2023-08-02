@@ -1,14 +1,112 @@
 let enter = $('.enter');
-console.log(enter);
+//console.log(enter);
 
 var fileContent = $.ajax({type: "GET", url: "https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/6bfa15d263d6d5b63840a8e5b64e04b382fdb079/valid-wordle-words.txt", async: false}, ).responseText;
 
 let masterList = fileContent.split('\n');
-console.log(masterList)
+//console.log(masterList)
+
+enter.on('click', findSuggestWords);
+
+function findSuggestWords() {
+  let suggestWords = masterList;
+  //console.log(suggestWords)
+  let firstPlace = $('#firstCorrect').val()
+  let secondPlace = $('#secondCorrect').val()
+  let thirdPlace = $('#thirdCorrect').val()
+  let fourthPlace = $('#fourthCorrect').val()
+  let fifthPlace = $('#fifthCorrect').val()
+
+  //console.log("Here")
+  let wave1 = placedLetterFind(firstPlace, secondPlace, thirdPlace, fourthPlace, fifthPlace, suggestWords);
+  //console.log(wave1)
+  //console.log("Done")
+
+  let yellow1 = $('#firstValid').val()
+  let yellow2 = $('#secondValid').val()
+  let yellow3 = $('#thirdValid').val()
+  let yellow4 = $('#fourthValid').val()
+  let yellow5 = $('#fifthValid').val()
+  let letters = [yellow1, yellow2, yellow3, yellow4, yellow5]
+  letters = letters.filter(function(str) {
+    return /\S/.test(str);
+  });
+
+  let wave2 = valWordsFinds(wave1, letters)
+  console.log(wave2)
+
+  let badLetters = $('.bad').val();
+  let final = eraseGreyLetters(badLetters, wave2)
+
+  displayData(final);
+  
+}
+
+function placedLetterFind(first, second, third, fourth, fifth, list) {
+  //let foundWords = []
+  //console.log(first);
+  //console.log(list);
+  if (first != "") {
+    //console.log("here")
+    list = list.filter(word => word.charAt(0) == first)
+  }
+  if (second != "") {
+    //console.log("here")
+    list = list.filter(word => word.charAt(1) == second)
+  }
+
+  if (third != "") {
+    //console.log("here")
+    list = list.filter(word => word.charAt(2) == third)
+  }
+
+  if (fourth != "") {
+    //console.log("here")
+    list = list.filter(word => word.charAt(3) == fourth)
+  }
+
+  if (fifth != "") {
+    //console.log("here")
+    list = list.filter(word => word.charAt(4) == fifth)
+  }
+
+  //console.log(list);
+
+  return list
+}
+
+function valWordsFinds(words, list) {
+  //let foundWords = []
+
+  for(let i = 0; i < list.length; i++) {
+    words = words.filter(word => word.includes(list[i]))
+    //console.log(words);
+  }
+
+  return words;
+}
+
+function eraseGreyLetters(string, list) {
+  let bad = string.split("")
+  //console.log(letters)
+
+  for (let i = 0; i < bad.length; i++) {
+    list = list.filter(word => word.includes(bad[i]) == false);
+    //console.log(list);
+  }
+
+  //console.log(list);
+
+  return list;
+}
 
 
-//fileContent = jQuery.get('https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/6bfa15d263d6d5b63840a8e5b64e04b382fdb079/valid-wordle-words.txt').responseText;
+function displayData(finalList) {
+  let displayBox = $('.box');
+  console.log(displayBox)
+  displayBox.removeClass('hidden');
 
-//console.log(fileContent)
-//console.log(file)
-//var msg = $.ajax({type: "GET", url: "my_script.php", async: false}).resp
+  for (let i = 0; i < finalList.length; i++) {
+    displayBox.append(`<p>${finalList[i]}</p>`);
+  }
+}

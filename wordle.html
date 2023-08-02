@@ -32,7 +32,6 @@
 </head>
 
 <body>
-  <script src="../scripts/wordle.js"></script>
   <nav>
     <a href="index.html" class="icon">Katie Hub</a>
     <div class="right">
@@ -85,14 +84,15 @@
       <h4>Bad Letters</h4>
       <p>Letters not in the word (Grey Tiles)</p>
       <br>
-      <input type="text" pattern="[A-Za-z]+">
+      <input type="text" pattern="[A-Za-z]+" class="bad">
     </div>
 
     <button class="enter">Enter</button>
   </section>
 
-  <div class="box">
+  <div class="box hidden">
   </div>
+  <script src="../scripts/wordle.js"></script>
   <script>
     $(document).ready(function() {
       const firstCor = $('#firstCorrect');
