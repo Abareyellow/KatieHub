@@ -4,6 +4,7 @@ let enter = $('.enter');
 var fileContent = $.ajax({type: "GET", url: "https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/6bfa15d263d6d5b63840a8e5b64e04b382fdb079/valid-wordle-words.txt", async: false}, ).responseText;
 
 let masterList = fileContent.split('\n');
+let message = "";
 //console.log(masterList)
 
 enter.on('click', findSuggestWords);
@@ -11,34 +12,44 @@ enter.on('click', findSuggestWords);
 function findSuggestWords() {
   let suggestWords = masterList;
   //console.log(suggestWords)
-  let firstPlace = $('#firstCorrect').val()
-  let secondPlace = $('#secondCorrect').val()
-  let thirdPlace = $('#thirdCorrect').val()
-  let fourthPlace = $('#fourthCorrect').val()
-  let fifthPlace = $('#fifthCorrect').val()
+  let firstPlace = $('#firstCorrect').val().toLowerCase()
+  let secondPlace = $('#secondCorrect').val().toLowerCase()
+  let thirdPlace = $('#thirdCorrect').val().toLowerCase()
+  let fourthPlace = $('#fourthCorrect').val().toLowerCase()
+  let fifthPlace = $('#fifthCorrect').val().toLowerCase()
 
   //console.log("Here")
-  let wave1 = placedLetterFind(firstPlace, secondPlace, thirdPlace, fourthPlace, fifthPlace, suggestWords);
   //console.log(wave1)
   //console.log("Done")
 
-  let yellow1 = $('#firstValid').val()
-  let yellow2 = $('#secondValid').val()
-  let yellow3 = $('#thirdValid').val()
-  let yellow4 = $('#fourthValid').val()
-  let yellow5 = $('#fifthValid').val()
+  let yellow1 = $('#firstValid').val().toLowerCase()
+  let yellow2 = $('#secondValid').val().toLowerCase()
+  let yellow3 = $('#thirdValid').val().toLowerCase()
+  let yellow4 = $('#fourthValid').val().toLowerCase()
+  let yellow5 = $('#fifthValid').val().toLowerCase()
   let letters = [yellow1, yellow2, yellow3, yellow4, yellow5]
   letters = letters.filter(function(str) {
     return /\S/.test(str);
   });
 
+  let badLetters = $('.bad').val().toLowerCase();
+
+  let okToGo = checkInputs(firstPlace, secondPlace, thirdPlace, fourthPlace, fifthPlace, letters, badLetters);
+  console.log(okToGo)
+  
+
+  if (okToGo) {
+    let wave1 = placedLetterFind(firstPlace, secondPlace, thirdPlace, fourthPlace, fifthPlace, suggestWords);
+
   let wave2 = valWordsFinds(wave1, letters)
   console.log(wave2)
 
-  let badLetters = $('.bad').val();
   let final = eraseGreyLetters(badLetters, wave2)
 
   displayData(final);
+  } else {
+    alert(message)
+  }
   
 }
 
@@ -111,4 +122,25 @@ function displayData(finalList) {
   for (let i = 0; i < finalList.length; i++) {
     displayBox.append(`<p class="words">${finalList[i]}</p>`);
   }
+}
+
+function checkInputs(p1, p2, p3, p4, p5, letters, bad) {
+  let checklist = [p1, p2, p3, p4, p5];
+  checklist = checklist.filter(function(str) {
+    return /\S/.test(str);
+  });
+
+  checklist.concat(letters)
+  for (let i = 0; i < checklist.length; i++) {
+    if (bad.includes(checklist[i])) {
+      message = `The letter ${checklist[i]} is use in the word.`
+      return false;
+    } else if (/^[^A-Za-z]*$/.test(checklist[i])) {
+      message = "Invalid character!!"
+      return false;
+    }
+  }
+
+  return true;
+  
 }
