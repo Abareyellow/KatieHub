@@ -103,10 +103,12 @@ function eraseGreyLetters(string, list) {
 
 function displayData(finalList) {
   let displayBox = $('.box');
-  console.log(displayBox)
+  //console.log(displayBox)
   displayBox.removeClass('hidden');
+  //console.log(displayBox)
+  displayBox.empty();
 
   for (let i = 0; i < finalList.length; i++) {
-    displayBox.append(`<p>${finalList[i]}</p>`);
+    displayBox.append(`<p class="words">${finalList[i]}</p>`);
   }
 }

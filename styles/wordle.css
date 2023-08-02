@@ -49,10 +49,21 @@ button.enter {
 }
 
 .box {
+  margin: auto;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: 3px solid black;
   background-color: #ebebeb;
 }
 
 .hidden {
   display: none;
+}
+
+.words {
+  padding: 2px;
+  background-color: white;
+  margin: 3px;
 }
