@@ -304,10 +304,10 @@ function initImageMouseOver() {
 	}*/
   $('span').on('mouseover', (e) => {
 			e.target.style.color = "purple";
-			e.target.previousElementSibling.src="../images/plus_dark.png";
+			e.target.previousElementSibling.src="images/plus_dark.png";
 		}).on('mouseout', (e) => {
 			e.target.style.color = "blue"
-			e.target.previousElementSibling.src = "../images/plus_light.png";
+			e.target.previousElementSibling.src = "images/plus_light.png";
 		} )
 	
 	/*let nodes = document.querySelectorAll('img');
@@ -324,10 +324,10 @@ function initImageMouseOver() {
 
   $('img').on('mouseover', (e) => {
 			e.target.nextElementSibling.style.color = "purple";
-			e.target.src="../images/plus_dark.png";
+			e.target.src="images/plus_dark.png";
 		}).on('mouseout', (e) => {
 			e.target.nextElementSibling.style.color = "blue"
-			e.target.src = "../images/plus_light.png";
+			e.target.src = "images/plus_light.png";
 		})
 }
 
