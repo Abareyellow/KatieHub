@@ -2,9 +2,61 @@
   background-color: white;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  margin-top: 30px;
+  width: 75%;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 body {
   background-color: #B0E0E6;
+  /*background-attachment: fixed;*/
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+h5 {
+  font-size: 20px;
+  width: 200px;
+  border-bottom: 1px solid black;
+}
+
+.about {
+  margin-bottom: 15px;
+}
+
+label {
+  padding: 10px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  margin: 20px;
+}
+
+.about img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+
+span {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+form p {
+  margin-bottom: 20px;
 }
