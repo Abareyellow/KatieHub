@@ -246,47 +246,68 @@ function findPersonality() {
 function updateStructure(score, diff) {
   if (score >= 0 && score <= 4) {
     //Taro
+    windowResult("taro");
   } else if (score == 5) {
     if (diff == "yes") {
       //Taro
+      windowResult("taro")
     } else {
       //Shinichi
+      windowResult("shinichi")
     }
   } else if (score >= 6 && score <= 14) {
     //Shinichi
+    windowResult("shinichi")
   } else if (score == 15) {
     if (diff == "yes") {
       //Haruka
+      windowResult("haruka")
     } else {
       //Shinichi
+      windowResult("shinichi")
     }
   } else if (score >= 16 && score <= 24) {
     //Haruka
-  }  else if (score == 25) {
+     windowResult("haruka")
+  } else if (score == 25) {
     if (diff == "yes") {
       //Haruka
+       windowResult("haruka")
     } else {
       //Tsubasa
+       windowResult("tsubasa")
     }
   } else if (score >= 26 && score <= 34) {
     //Tsubasa
+    windowResult("tsubasa")
   } else if (score == 35) {
     if (diff == "yes") {
       //Jiro
+      windowResult("jiro")
     } else {
       //Tsubasa
+      windowResult("tsubasa")
     }
   } else if (score >= 36 && score <= 44) {
     //Jiro
+    windowResult("jiro")
   } else if (score == 45) {
     if (diff == "yes") {
       //Jiro
+      windowResult("jiro")
     } else {
       //Tsuyoshi
+      windowResult("tsuyoshi")
     }
   } else {
     //Tsuyoshi
+    windowResult("tsuyoshi")
   }
+}
 
-  console.log("Done")
+function windowResult(name) {
+  let $result = $(".result")
+  $result.removeClass("hidden");
+  $result.append(`<p>You got ${name}</p>`);
+  
 }
