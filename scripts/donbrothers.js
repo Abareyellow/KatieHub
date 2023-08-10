@@ -1,10 +1,13 @@
-let $button = $("input[type='submit']");
+let $button = $(".submit");
 let total = 0;
 
 $button.on("click", results);
 
 function results() {
-  let points = findPersonality()
+  total = 0;
+  let $teamup = $("input[name='team-up']:checked").val();
+  let points = findPersonality();
+  //console.log(points)
 }
 
 function findPersonality() {
@@ -18,7 +21,6 @@ function findPersonality() {
   let friend = $("input[name='friend']:checked").val();
   let using = $("input[name='using']:checked").val();
   let worst = $("input[name='worst']:checked").val();
-  let team-up = $("input[name='team-up']:checked").val();
 
   switch (color) {
     case "red":
@@ -52,5 +54,189 @@ function findPersonality() {
       total += 2;
       break;
     case "dog":
+      total += 3;
+      break;
+    case "pheasant":
+      total += 5
+      break;
+    case "dragon":
+      total += 4;
+      break;
+    case "tiger":
+      total += 4;
+      break;
+    case "human":
+      total += 0;
+      break;
   }
+
+  switch (jobs) {
+    case "delivery":
+      total += 0;
+      break;
+    case "manga":
+      total += 2;
+      break;
+    case "consultant":
+      total += 5;
+      break;
+    case "volunteer":
+      total += 1;
+      break;
+    case "criminal":
+      total += 3;
+      break;
+    case "hero":
+      total += 4;
+      break;
+  }
+
+  switch (weakness) {
+    case "good":
+      total += 0;
+      break;
+    case "analytical":
+      total += 1;
+      break;
+    case "childish":
+      total += 2;
+      break;
+    case "trust":
+      total += 3;
+      break;
+    case "doubt":
+      total += 5;
+      break;
+    case "naive":
+      total += 4;
+      break;
+  }
+
+  switch (activity) {
+    case "everything":
+      total += 0;
+      break;
+    case "poetry":
+      total += 1;
+      break;
+    case "drawing":
+      total += 2;
+      break;
+    case "running":
+      total += 3;
+      break;
+    case "love-time":
+      total += 5;
+      break;
+    case "cosplay":
+      total += 4;
+      break;
+  }
+
+  switch (describe) {
+    case "blood":
+      total += 4;
+      break;
+    case "humble":
+      total += 5;
+      break;
+    case "cool":
+      total += 3;
+      break;
+    case "helpful":
+      total += 2;
+      break;
+    case "erudite":
+      total += 1;
+      break;
+    case "honest":
+      total += 0;
+      break;
+  }
+
+  switch (powers) {
+    case "unknown":
+      total += 0;
+      break;
+    case "discovery":
+      total += 1;
+      break;
+    case "high-point":
+      total += 2;
+      break;
+    case "low-point":
+      total += 3;
+      break;
+    case "random":
+      total += 5;
+      break;
+    case "achievement":
+      total += 4;
+      break;
+  }
+
+  switch (friend) {
+    case "be-honest":
+      total += 0;
+      break;
+    case "enlighten":
+      total += 1;
+      break;
+    case "kind":
+      total += 2;
+      break;
+    case "roleplay":
+      total += 3;
+      break;
+    case "plan":
+      total += 5;
+      break;
+    case "motivate":
+      total += 4;
+      break;
+  }
+
+  switch (using) {
+    case "dont":
+      total += 0;
+      break;
+    case "good":
+      total += 1;
+      break;
+    case "situation":
+      total += 2;
+      break;
+    case "escape":
+      total += 3;
+      break;
+    case "support":
+      total += 5;
+      break;
+    case "train":
+      total += 4;
+      break;
+  }
+
+  switch (worst) {
+    case "accept":
+      total += 0;
+      break;
+    case "odd":
+      total += 1;
+      break;
+    case "plagiarism":
+      total += 2;
+      break;
+    case "lose":
+      total += 3;
+      break;
+    case "love":
+      total += 5;
+      break;
+    case "fake":
+      total += 4;
+      break;
+  }
+
+  return total;
 }
