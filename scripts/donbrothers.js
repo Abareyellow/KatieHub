@@ -8,6 +8,8 @@ function results() {
   let $teamup = $("input[name='team-up']:checked").val();
   let points = findPersonality();
   //console.log(points)
+
+  updateStructure(points, $teamup);
 }
 
 function findPersonality() {
@@ -239,4 +241,52 @@ function findPersonality() {
   }
 
   return total;
+}
+
+function updateStructure(score, diff) {
+  if (score >= 0 && score <= 4) {
+    //Taro
+  } else if (score == 5) {
+    if (diff == "yes") {
+      //Taro
+    } else {
+      //Shinichi
+    }
+  } else if (score >= 6 && score <= 14) {
+    //Shinichi
+  } else if (score == 15) {
+    if (diff == "yes") {
+      //Haruka
+    } else {
+      //Shinichi
+    }
+  } else if (score >= 16 && score <= 24) {
+    //Haruka
+  }  else if (score == 25) {
+    if (diff == "yes") {
+      //Haruka
+    } else {
+      //Tsubasa
+    }
+  } else if (score >= 26 && score <= 34) {
+    //Tsubasa
+  } else if (score == 35) {
+    if (diff == "yes") {
+      //Jiro
+    } else {
+      //Tsubasa
+    }
+  } else if (score >= 36 && score <= 44) {
+    //Jiro
+  } else if (score == 45) {
+    if (diff == "yes") {
+      //Jiro
+    } else {
+      //Tsuyoshi
+    }
+  } else {
+    //Tsuyoshi
+  }
+
+  console.log("Done")
 }
