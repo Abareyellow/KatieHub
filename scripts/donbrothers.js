@@ -1,4 +1,4 @@
-let $button = $(".submit");
+let $button = $('input[type="button"]');
 let total = 0;
 
 $button.on("click", results);
@@ -7,7 +7,7 @@ function results() {
   total = 0;
   let $teamup = $("input[name='team-up']:checked").val();
   let points = findPersonality();
-  //console.log(points)
+  console.log(points)
 
   updateStructure(points, $teamup);
 }
@@ -308,6 +308,20 @@ function updateStructure(score, diff) {
 function windowResult(name) {
   let $result = $(".result")
   $result.removeClass("hidden");
-  $result.append(`<p>You got ${name}</p>`);
+  //$result.append(`<div>`);
+
+  if (name == "taro") {
+    
+  } else if (name == "shinich") {
+    
+  } else if (name == "haruka") {
+    
+  } else if (name == "tsubasa") {
+    
+  } else if (name == "tsuyoshi") {
+    
+  } else if (name == "jiro") {
+    
+  }
   
 }
