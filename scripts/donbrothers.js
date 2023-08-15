@@ -325,3 +325,11 @@ function windowResult(name) {
   }
   
 }
+
+const flipButton = $('#flip-button-taro');
+const card = $('.image-card'); // Change the selector to .card
+card.flip(); // Initialize the flip plugin on the card element
+
+flipButton.on('click', function() {
+  card.flip('toggle'); // Toggle the flip animation on the card
+});

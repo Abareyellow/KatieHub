@@ -11,6 +11,7 @@
   <!--<link href="styles/homepage.css" rel="stylesheet" type="text/css" />-->
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="scripts/download_scripts/jquery.flip.js"></script>
 </head>
  
 <body>
@@ -42,7 +43,7 @@
   <div class="about">
     <h5>About Donbrothers</h5>
     <p>Avataro Sentai Donbrothers is the 46th installment of Toei's Super Sentai Series. This series premiered on March 6th, 2022 and end Febuary 26th, 2023. This series' theme is based off of the legend of Momotaro and virtual really.</p>
-    <img src="images/don.jpg">
+    <img src="images/don/don.jpg">
   </div>
 
   <form>
@@ -159,7 +160,21 @@
   </form>
   </div>
 
-  <div class="hidden result"></div>
+  <div class="result">
+    <div class="taro">
+      <div class="card">
+        <div class="image-card">
+          <div class="front">
+            <img src="images/don/taro2.jpg" alt="Flippable Image" class="image" id="flippable-image">
+          </div>
+          <div class="back">
+            <img src="images/don/taro.png" alt="Revealed Image" class="image">
+          </div>
+        </div>
+        <button id="flip-button-taro">Flip Image</button>
+      </div>
+    </div>
+  </div>
   <script src="scripts/donbrothers.js"></script>
 </body>
 
