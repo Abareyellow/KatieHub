@@ -311,25 +311,70 @@ function windowResult(name) {
   //$result.append(`<div>`);
 
   if (name == "taro") {
-    
+    $('.taro').removeClass("hidden");
   } else if (name == "shinich") {
-    
+    $('.shinichi').removeClass("hidden");
   } else if (name == "haruka") {
-    
+    $('.haruka').removeClass("hidden");
   } else if (name == "tsubasa") {
-    
+    $('.tsubasa').removeClass("hidden");
   } else if (name == "tsuyoshi") {
-    
+    $('.ew').removeClass("hidden");
   } else if (name == "jiro") {
-    
+    $('.jiro').removeClass("hidden");
   }
   
 }
 
 const flipButton = $('#flip-button-taro');
-const card = $('.image-card'); // Change the selector to .card
+const card = $('#taro'); // Change the selector to .card
 card.flip(); // Initialize the flip plugin on the card element
 
 flipButton.on('click', function() {
   card.flip('toggle'); // Toggle the flip animation on the card
+});
+
+const flipButtonShinichi = $('#flip-button-shinichi');
+const shinichiCard = $('#shinichi');
+shinichiCard.flip();
+
+flipButtonShinichi.on('click', function() {
+  console.log("Here")
+  shinichiCard.flip('toggle'); // Toggle the flip animation on the card
+});
+
+const flipButtonHaruka = $('#flip-button-haruka');
+const harukaCard = $('#haruka');
+harukaCard.flip();
+
+flipButtonHaruka.on('click', function() {
+  console.log("Here")
+  harukaCard.flip('toggle'); // Toggle the flip animation on the card
+});
+
+const flipButtonTsubasa = $('#flip-button-tsubasa');
+const tsubasaCard = $('#tsubasa');
+tsubasaCard.flip();
+
+flipButtonTsubasa.on('click', function() {
+  console.log("Here")
+  tsubasaCard.flip('toggle'); // Toggle the flip animation on the card
+});
+
+const flipButtonSorry = $('#flip-button-ew');
+const sorryCard = $('#ew');
+sorryCard.flip();
+
+flipButtonSorry.on('click', function() {
+  console.log("Here")
+  sorryCard.flip('toggle'); // Toggle the flip animation on the card
+});
+
+const flipButtonJiro = $('#flip-button-jiro');
+const jiroCard = $('#jiro');
+jiroCard.flip();
+
+flipButtonJiro.on('click', function() {
+  console.log("Here")
+  jiroCard.flip('toggle'); // Toggle the flip animation on the card
 });

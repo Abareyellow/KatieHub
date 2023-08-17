@@ -150,7 +150,7 @@
     </label>
 
     <label for="team-up">
-      <p><span>11</span>If you had to team-up with former villians for an event, would you join them?</p>
+      <p><span>11</span>If you had to team-up with former villians for a battle, would you join them?</p>
       <input type="radio" name="team-up" value="yes" id="yes" required>Yes<br>
       <input type="radio" name="team-up" value="no" id="no" required>No<br>
     </label>
@@ -160,10 +160,10 @@
   </form>
   </div>
 
-  <div class="result">
-    <div class="taro">
+  <div class="result hidden">
+    <div class="taro hidden">
       <div class="card">
-        <div class="image-card">
+        <div id="taro" class="image-card">
           <div class="front">
             <img src="images/don/taro2.jpg" alt="Flippable Image" class="image" id="flippable-image">
             <div class="text-contnet">
@@ -183,28 +183,116 @@
       </div>
     </div>
 
-    <div class="shinichi">
+    <div class="shinichi hidden">
       <div class="card">
-        <div class="image-card">
+        <div id="shinichi" class="image-card">
           <div class="front">
-            <img src="images/don/taro2.jpg" alt="Flippable Image" class="image" id="flippable-image">
+            <img src="images/don/sarubrother.jpg" alt="Flippable Image" class="image" id="flippable-image">
             <div class="text-contnet">
-              <h3>Born from the peach! Don Momotaro!</h3>
-              <h6>Yo! Japan's Finest!!</h6>
+              <h3>Farewell to the sad world! Saru Brother!</h3>
+              <h6>Yo! 'Ook at the pecs!!</h6>
             </div>
           </div>
           <div class="back">
-            <img src="images/don/taro.png" alt="Revealed Image" class="image">
+            <img src="images/don/shinichi.png" alt="Revealed Image" class="image">
             <div class="text-contnet">
-              <h3>You got Taro Momoi</h3>
-              <p>Taro is the red ranger and the leader of the Donbrothers. You are a cheery and well-mannered persona. However you can be brutally honest at times.</p>
+              <h3>You got Shinichi Saruhara</h3>
+              <p>Shinichi Saruhara is the blue ranger and second-in-command to Don Momotaro. You are an observer with an analytical mind. You hate the montary system in place.</p>
             </div>
           </div>
         </div>
-        <button id="flip-button-taro">Click Me</button>
+        <button id="flip-button-shinichi">Click Me</button>
       </div>
     </div>
-  </div>
+
+    <div class="haruka hidden">
+      <div class="card">
+        <div id="haruka" class="image-card">
+          <div class="front">
+            <img src="images/don/onisister.jpg" alt="Flippable Image" class="image" id="flippable-image">
+            <div class="text-contnet">
+              <h3>The Manga Master... Oni Sister!</h3>
+              <h6>Yo! This Oni's Gonna Club You!!</h6>
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/don/haruka.png" alt="Revealed Image" class="image">
+            <div class="text-contnet">
+              <h3>You got Haruka Kitou</h3>
+              <p>Haruka is the yellow ranger and the youngest member of the Donbrothers. you are helpful and kind to your friends but sometimes childish.</p>
+            </div>
+          </div>
+        </div>
+        <button id="flip-button-haruka">Click Me</button>
+      </div>
+     </div>
+
+    <div class="tsubasa hidden">
+      <div class="card">
+        <div id="tsubasa" class="image-card">
+          <div class="front">
+            <img src="images/don/inubrother.jpg" alt="Flippable Image" class="image" id="flippable-image">
+            <div class="text-contnet">
+              <h3> The fastest getaway alive! Inu Brother</h3>
+              <h6>Yo! Arf You Ready!</h6>
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/don/tsubasa.png" alt="Revealed Image" class="image">
+            <div class="text-contnet">
+              <h3>You got Tsubasa Inuzuka</h3>
+              <p>Tsubasa is the black ranger and a former theater performancer. You are a cool but you also are egotistical and distrustful to others.</p>
+            </div>
+          </div>
+        </div>
+        <button id="flip-button-tsubasa">Click Me</button>
+      </div>
+    </div>
+
+    <div class="ew hidden">
+      <div class="card">
+        <div id="ew" class="image-card">
+          <div class="front">
+            <img src="images/don/kijibrother.jpg" alt="Flippable Image" class="image" id="flippable-image">
+            <div class="text-contnet">
+              <h3> One faithful pheasant! Kiji Brother</h3>
+              <h6>Yo! It's so Tricky!</h6>
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/don/tsouyoshi.png" alt="Revealed Image" class="image">
+            <div class="text-contnet">
+              <h3>You got Tsuyoshi Kijino</h3>
+              <p>Tsuyoshi is the pink ranger and Donbrothers memeber who turns into Hitotsuki. You love your spouse but you doubt yourself.</p>
+            </div>
+          </div>
+        </div>
+        <button id="flip-button-ew">Click Me</button>
+      </div>
+    </div>
+
+    <div class="jiro hidden">
+      <div class="card">
+        <div id="jiro" class="image-card">
+          <div class="front">
+            <img src="images/don/dondoku.jpg" alt="Flippable Image" class="image" id="flippable-image">
+            <div class="text-contnet">
+              <h3> Able bodied and dragon-muscled! Don Dragoku!</h3>
+              <h6>Topflight Dragon!</h6>
+            </div>
+          </div>
+          <div class="back">
+            <img src="images/don/jiro.png" alt="Revealed Image" class="image">
+            <div class="text-contnet">
+              <h3>You got Jiro Momotani</h3>
+              <p>Jiro is the gold ranger and the sixth ranger. You are excited to be here but can be naive.</p>
+            </div>
+          </div>
+        </div>
+        <button id="flip-button-jiro">Click Me</button>
+      </div>
+    </div>
+    </div>
   <script src="scripts/donbrothers.js"></script>
 </body>
 
