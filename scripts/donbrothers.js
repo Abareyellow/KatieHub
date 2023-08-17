@@ -308,11 +308,13 @@ function updateStructure(score, diff) {
 function windowResult(name) {
   let $result = $(".result")
   $result.removeClass("hidden");
-  //$result.append(`<div>`);
+  let $body = $('body');
+  $body.addClass('fadeOut');
+  $('.quiz').addClass('hidden');
 
   if (name == "taro") {
     $('.taro').removeClass("hidden");
-  } else if (name == "shinich") {
+  } else if (name == "shinichi") {
     $('.shinichi').removeClass("hidden");
   } else if (name == "haruka") {
     $('.haruka').removeClass("hidden");
@@ -378,3 +380,13 @@ flipButtonJiro.on('click', function() {
   console.log("Here")
   jiroCard.flip('toggle'); // Toggle the flip animation on the card
 });
+
+let $x = $('.x');
+
+$x.on('click', reverse);
+
+function reverse() {
+  $('body').removeClass('fadeOut')
+  $('.quiz').removeClass('hidden')
+  $('.result').addClass('hidden')
+}
