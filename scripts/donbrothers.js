@@ -1,4 +1,4 @@
-let $button = $('input[type="button"]');
+let $button = $('input[type="submit"]');
 let total = 0;
 
 $button.on("click", results);
