@@ -1,5 +1,6 @@
-let $button = $('input[type="submit"]');
+let $button = $('input[type="button"]');
 let total = 0;
+let questions = []
 
 $button.on("click", results);
 
@@ -9,8 +10,12 @@ function results() {
   let points = findPersonality();
   console.log(points)
 
+ if (points < 0) {
+   alert(`You have to anwser these questions: ${questions.join(" ")}`)
+ } else {
   updateStructure(points, $teamup);
-}
+ }
+} 
 
 function findPersonality() {
   let color = $("input[name='color']:checked").val();
@@ -46,6 +51,9 @@ function findPersonality() {
     case "silver":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(1)
   }
 
   switch (creature) {
@@ -70,6 +78,9 @@ function findPersonality() {
     case "human":
       total += 0;
       break;
+    default:
+      total -= 100;
+      questions.push(2)
   }
 
   switch (jobs) {
@@ -91,6 +102,9 @@ function findPersonality() {
     case "hero":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(3)
   }
 
   switch (weakness) {
@@ -112,6 +126,9 @@ function findPersonality() {
     case "naive":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(4)
   }
 
   switch (activity) {
@@ -133,6 +150,9 @@ function findPersonality() {
     case "cosplay":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(5)
   }
 
   switch (describe) {
@@ -154,6 +174,9 @@ function findPersonality() {
     case "honest":
       total += 0;
       break;
+    default:
+      total -= 100;
+      questions.push(6)
   }
 
   switch (powers) {
@@ -175,6 +198,9 @@ function findPersonality() {
     case "achievement":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(7)
   }
 
   switch (friend) {
@@ -196,6 +222,9 @@ function findPersonality() {
     case "motivate":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(8)
   }
 
   switch (using) {
@@ -217,6 +246,9 @@ function findPersonality() {
     case "train":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(9)
   }
 
   switch (worst) {
@@ -238,6 +270,9 @@ function findPersonality() {
     case "fake":
       total += 4;
       break;
+    default:
+      total -= 100;
+      questions.push(10)
   }
 
   return total;
