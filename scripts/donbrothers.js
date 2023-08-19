@@ -1,20 +1,28 @@
 let $button = $('input[type="button"]');
 let total = 0;
 let questions = []
+let person = "";
 
 $button.on("click", results);
 
 function results() {
   total = 0;
   let $teamup = $("input[name='team-up']:checked").val();
+  //console.log($teamup)
   let points = findPersonality();
-  console.log(points)
+
+  if ($teamup != "no" && $teamup != "yes") {
+    questions.push(11)
+  } 
+  //console.log(points)
 
  if (points < 0) {
    alert(`You have to anwser these questions: ${questions.join(" ")}`)
  } else {
   updateStructure(points, $teamup);
  }
+
+  questions = [];
 } 
 
 function findPersonality() {
@@ -349,18 +357,25 @@ function windowResult(name) {
 
   if (name == "taro") {
     $('.taro').removeClass("hidden");
+    person = ".taro"
   } else if (name == "shinichi") {
     $('.shinichi').removeClass("hidden");
+    person = ".shinichi"
   } else if (name == "haruka") {
     $('.haruka').removeClass("hidden");
+    person = ".haruka"
   } else if (name == "tsubasa") {
     $('.tsubasa').removeClass("hidden");
+    person = ".tsubasa"
   } else if (name == "tsuyoshi") {
     $('.ew').removeClass("hidden");
+    person = ".tsuyoshi"
   } else if (name == "jiro") {
     $('.jiro').removeClass("hidden");
+    person = ".jiro"
   }
-  
+
+  console.log(person)
 }
 
 const flipButton = $('#flip-button-taro');
@@ -421,7 +436,11 @@ let $x = $('.x');
 $x.on('click', reverse);
 
 function reverse() {
+  console.log(person)
   $('body').removeClass('fadeOut')
   $('.quiz').removeClass('hidden')
   $('.result').addClass('hidden')
+  //$('.result_card').empty();
+
+  $(person).addClass("hidden");
 }
