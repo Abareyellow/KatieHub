@@ -16,12 +16,18 @@ body {
   line-height: 100px;
 }
 
-.jumbotron p {
+.jumbotron h1 {
+  font-size: 60px;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.jumbotron h3 {
+  font-size: 26px;
+  font-family: 'Gloria Hallelujah', cursive;
   vertical-align: middle;
 }
 
 .inputs {
-  /*background: linear-gradient(to top, rgba(#cffffe, 0.3), rgba(#f9f7d9, 0.3), rgba(#fce2ce, 0.3), rgba(#ffc1f3, 0.3));*/
   background-color: white;
   /*border-color: linear-gradient(#9dfffd, #f2edb0, #f8b98b, #ff91e9);*/
   padding: 10px;
@@ -30,6 +36,7 @@ body {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Gluten', cursive;
 }
 
 .flex {
@@ -46,4 +53,11 @@ label {
 
 .submit {
   padding: 6px 5px;
+  font-family: 'Gluten', cursive;
+}
+
+.submit:hover {
+  background: linear-gradient(0.25turn, red, orange, yellow, #00ea00, #6464ff, #c600c6);
+  font-weight: bold;
+  border-radius: 6px;
 }
