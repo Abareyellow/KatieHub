@@ -10,6 +10,7 @@
   <link href="styles/pledge-flag.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gloria+Hallelujah&family=Gluten:wght@300&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
  
 <body>
@@ -46,29 +47,29 @@
     <h2>Make a Flag</h2>
 
     <div class="flex">
-      <label>First Name:
-        <input type="text">
+      <label for="firstname">First Name:
+        <input type="text" name="firstname" id="firstname">
       </label>
 
-      <label>Pledge:
-        <input type="text">
+      <label for="pledge">Pledge:
+        <input type="text" name="pledge" id="pledge">
       </label>
 
-      <label>Color For The Background:
-        <input type="color">
+      <label for="background">Color For The Background:
+        <input type="color" name="background" id="background">
       </label>
 
-      <label>2nd Color For The Background:
-        <input type="color">
+      <label for="background2">2nd Color For The Background:
+        <input type="color" name="background2" id="background2">
       </label>
 
-      <label>Font Color:
-        <input type="color">
+      <label for="font">Font Color:
+        <input type="color" name="font" id="font">
       </label>
     </div>
     <button class="submit">Create Your Flag</button>
   </div>
-  
+  <script src="scripts/pledge-flag.js"></script>
 </body>
 
 </html>
