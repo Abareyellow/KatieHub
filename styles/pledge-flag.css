@@ -6,11 +6,12 @@ body {
   background-image: url("https://img.freepik.com/free-vector/realistic-galaxy-background_23-2148991324.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  width: 80%;
+  width: 100%;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
   text-align: center;
   color: white;
   line-height: 100px;
@@ -51,7 +52,7 @@ label {
   margin: 7px;
 }
 
-.submit {
+.submit, .back, .download {
   padding: 6px 5px;
   font-family: 'Gluten', cursive;
 }
@@ -62,19 +63,39 @@ label {
   border-radius: 6px;
 }
 
-.pledge-card {
-  margin 
-}
-
-.pledge-card h1 {
-  
-}
-
-.pledge-card p {
-  
-}
-
 .results {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
   background-color: white;
   padding: 15px;
 }
+
+.pledge-card {
+  width: 650px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.pledge-card h1 {
+  padding: 15px;
+  font-family: 'Squada One', cursive;
+  font-size: 100px;
+}
+
+.pledge-card p {
+  margin-top: 15px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+
+.buttons {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
