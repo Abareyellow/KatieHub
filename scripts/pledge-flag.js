@@ -2,8 +2,10 @@ let $button = $(".submit");
 //console.log($back)
 let result = $('.results');
 let input = $('.inputs');
+let $download = $('.download')
 
 $button.on("click", submitResults);
+$download.on("click", downloadFlag)
 
 function submitResults() {
   let $firstname = $("input[name='firstname']").val();
