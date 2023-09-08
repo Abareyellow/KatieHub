@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katie Hub</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
+  <link href="styles/homepage.css" rel="stylesheet" type="text/css" />
+  <link href="styles/buttons.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+  <nav>
+    <a href="index.html" class="icon">Katie Hub</a>
+    <div class="right">
+      <div class="dropdown">
+        <button class="dropdown-btn">My Projects</button>
+        <div class="dropdown-options">
+          <a href="shinypokemon.html">Shiny Pokemon Gallery</a>
+          <a href="wordle.html">Wordle Helper</a>
+          <a href="donbrothers-quiz.html">Donbrothers Quiz</a>
+        </div>
+      </div>
+      <!--<a href="#">My Project</a>-->
+      <div class="dropdown">
+        <button class="dropdown-btn">School/Practice Projects</button>
+        <div class="dropdown-options">
+          <a href="bananaade.html">Bananaade</a>
+          <a href="qep.html">Appstate QEP</a>
+          <a href="pizzashanty.html">Pizza Shanty</a>
+        </div>
+      </div>
+      <a href="aboutme.html">About Me</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>HackerRank 10 Days of Javascript Web Dev Projects</h1>
+    <div class="flex-con">
+      <div class="box">
+        <h3>Create a Button</h3>
+        <button id="btn">0</button>
+      </div>
+      <div class="box">
+        <div id="btns">
+          <h3>Buttons Container</h3>
+          <button id="btn1a" class="buttons">1</button>
+          <button id="btn2" class="buttons">2</button>
+          <button id="btn3" class="buttons">3</button>
+          <button id="btn4" class="buttons">4</button>
+          <button id="btn5" class="buttons">5</button>
+          <button id="btn6" class="buttons">6</button>
+          <button id="btn7" class="buttons">7</button>
+          <button id="btn8" class="buttons">8</button>
+          <button id="btn9" class="buttons">9</button>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Binary Calculator</h3>
+        <div id="res"></div>
+        <div id="btnsa">
+          <button id="btn0" class="buttonCal">0</button>
+          <button id="btn1" class="buttonCal">1</button>
+          <button id="btnClr" class="buttonCal">C</button>
+          <button id="btnEql" class="buttonCal">=</button>
+          <button id="btnSum" class="buttonCal">+</button>
+          <button id="btnSub" class="buttonCal">-</button>
+          <button id="btnMul" class="buttonCal">*</button>
+          <button id="btnDiv" class="buttonCal">/</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/buttons.js"></script>
+</body>
+
+</html>
