@@ -52,13 +52,22 @@ label {
   margin: 7px;
 }
 
-.submit, .back, .download {
+.submit, .back, #download {
   padding: 6px 5px;
   font-family: 'Gluten', cursive;
+  background-color: #d1f8d1;
+  border-radius: 6px;
+  border: none;
 }
 
 .submit:hover {
   background: linear-gradient(0.25turn, red, orange, yellow, #00ea00, #6464ff, #c600c6);
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.back, #download:hover {
+  background-color: #b6f3b6;
   font-weight: bold;
   border-radius: 6px;
 }
@@ -99,3 +108,10 @@ label {
   margin-top: 15px;
 }
 
+@media only screen and (min-width: 1000px)  {
+  .inputs {
+    width: 33%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

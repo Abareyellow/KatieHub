@@ -1,7 +1,7 @@
 let $button = $(".submit");
-//console.log($back)
 let result = $('.results');
 let input = $('.inputs');
+let message = "";
 
 $button.on("click", submitResults);
 
@@ -12,7 +12,11 @@ function submitResults() {
   let $background2 = $("input[name='background2']").val();
   let $font = $("input[name='font']").val();
 
-  maketheCard($firstname, $pledge, $background, $background2, $font);
+  if (checkInputs($firstname, $pledge, $background, $background2, $font)) {
+    alert(message)
+  } else {
+    maketheCard($firstname, $pledge, $background, $background2, $font);
+  }
 }
 
 function maketheCard(name, pledge, background, foreground, font) {
@@ -29,6 +33,21 @@ function maketheCard(name, pledge, background, foreground, font) {
   pledge_para.css({'color': `${font}`, 'background-color': `${foreground}`})
 }
 
+function checkInputs(name, pledge, background, foreground, font) {
+  if (name == "") {
+    message = "Please Type in a Name"
+    return true;
+  } else if (pledge == "") {
+    message = "Please Type in a Pledge"
+    return true
+  } else if (foreground == font) {
+    message = "Please Change Your Color for The Font or 2nd Background"
+    return true
+  }
+
+  return false
+}
+
 let $back = $(".buttons .back");
 
 $back.on("click", backToInputs);
@@ -37,4 +56,17 @@ function backToInputs() {
   console.log("here")
   result.addClass('hidden');
   input.removeClass('hidden')
+}
+
+document.getElementById("download").onclick = function() {
+  const screenshotTarget = document.getElementById("flag");
+
+  html2canvas(screenshotTarget).then((canvas) => {
+    const base64image = canvas.toDataURL("image/png");
+    let anchor = document.createElement('a');
+    anchor.setAttribute("href", base64image);
+    anchor.setAttribute("download", "my-flag.png");
+    anchor.click();
+    anchor.remove();
+  });
 }
