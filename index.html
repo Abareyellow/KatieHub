@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gloria+Hallelujah&family=Gluten:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Monoton&family=Squada+One&family=Teko:wght@600&display=swap" rel="stylesheet">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
  
 <body>
@@ -72,14 +73,14 @@
     <button class="submit">Create Your Flag</button>
   </div>
   <div class="results hidden">
-    <div class="pledge-card">
+    <div class="pledge-card" id="flag">
       <h1></h1>
       <p></p>
     </div>
 
     <div class="buttons">
       <button class="back">Go Back</button>
-      <button class="download">Download</button>
+      <button id="download">Download</button>
     </div>
   </div>
   <script src="scripts/pledge-flag.js"></script>

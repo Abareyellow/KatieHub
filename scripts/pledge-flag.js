@@ -1,11 +1,8 @@
 let $button = $(".submit");
-//console.log($back)
 let result = $('.results');
 let input = $('.inputs');
-let $download = $('.download')
 
 $button.on("click", submitResults);
-$download.on("click", downloadFlag)
 
 function submitResults() {
   let $firstname = $("input[name='firstname']").val();
@@ -39,4 +36,17 @@ function backToInputs() {
   console.log("here")
   result.addClass('hidden');
   input.removeClass('hidden')
+}
+
+document.getElementById("download").onclick = function() {
+  const screenshotTarget = document.getElementById("flag");
+
+  html2canvas(screenshotTarget).then((canvas) => {
+    const base64image = canvas.toDataURL("image/png");
+    let anchor = document.createElement('a');
+    anchor.setAttribute("href", base64image);
+    anchor.setAttribute("download", "my-flag.png");
+    anchor.click();
+    anchor.remove();
+  });
 }
