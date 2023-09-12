@@ -1,6 +1,6 @@
 const languageURL = 'https://student2.cs.appstate.edu/swansonja/project/data_language.php';
 const projectURL = 'https://student2.cs.appstate.edu/swansonja/project/data_projects.php';
-const studyAbroadURL = 'https://student2.cs.appstate.edu/swansonja/project/data_study_abroad.php';
+const studyURL = 'https://student2.cs.appstate.edu/swansonja/project/data_study_abroad.php';
 
 const language = ["First Name", "Last Name", "Language", "Level of Proficiency", "Email", "Website"];
 
@@ -13,8 +13,8 @@ $(function start() {
   setTable(languageURL, "Search by Language", "language", language);
   setFormProject(projectURL);
   setProjectTable(projectURL, "Search by Project", "project");
-  setFormStudy(studyAbroadURL);
-  setTable(studyAbroadURL, "Study Abroad Opportunities", "study_abroad", study);
+  setFormStudy(studyURL);
+  setTable(studyURL, "Study Abroad Opportunities", "study_abroad", study);
   buttons();
 });
 
