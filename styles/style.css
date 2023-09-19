@@ -7,7 +7,7 @@ html {
   margin: 0;
 }
 
-nav {
+#master-nav {
   background-color: #FFFF99;
   padding: 10px 15px 10px;
   font-size: 24px;
