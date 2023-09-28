@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katie Hub</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
+  <link href="styles/pledge-flag.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gloria+Hallelujah&family=Gluten:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Monoton&family=Squada+One&family=Teko:wght@600&display=swap" rel="stylesheet">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+ 
+<body>
+  <nav>
+    <a href="index.html" class="icon">Katie Hub</a>
+    <div class="right">
+      <div class="dropdown">
+        <button class="dropdown-btn">My Projects</button>
+        <div class="dropdown-options">
+          <a href="shinypokemon.html">Shiny Pokemon Gallery</a>
+          <a href="wordle.html">Wordle Helper</a>
+          <a href="donbrothers-quiz.html">Donbrothers Quiz</a>
+          <a href="pledge-flag.html">Pledge Flag</a>
+        </div>
+      </div>
+      <!--<a href="#">My Project</a>-->
+      <div class="dropdown">
+        <button class="dropdown-btn">School Projects</button>
+        <div class="dropdown-options">
+          <a href="bananaade.html">Bananaade</a>
+          <a href="qep.html">Appstate QEP</a>
+          <a href="pizzashanty.html">Pizza Shanty</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-btn">Online Practice</button>
+        <div class="dropdown-options">
+          <a href="button.html">JavaScript Buttons</a>
+        </div>
+      </div>
+      <a href="aboutme.html">About Me</a>
+    </div>
+  </nav>
+
+  <div class="inputs">
+
+    <div class="jumbotron">
+      <h1>Pledge Flag</h1>
+      <h3>Have a pledge, create a flag!!</h3>
+    </div>
+    
+    <h2>Make a Flag</h2>
+
+    <div class="flex">
+      <label for="firstname">First Name:
+        <input type="text" name="firstname" id="firstname">
+      </label>
+
+      <label for="pledge">Pledge:
+        <input type="text" name="pledge" id="pledge">
+      </label>
+
+      <label for="background">Color For The Background:
+        <input type="color" name="background" id="background">
+      </label>
+
+      <label for="background2">2nd Color For The Background:
+        <input type="color" name="background2" id="background2">
+      </label>
+
+      <label for="font">Font Color:
+        <input type="color" name="font" id="font">
+      </label>
+    </div>
+    <button class="submit">Create Your Flag</button>
+  </div>
+  <div class="results hidden">
+    <div class="pledge-card" id="flag">
+      <h1></h1>
+      <p></p>
+    </div>
+
+    <div class="buttons">
+      <button class="back">Go Back</button>
+      <button id="download">Download</button>
+    </div>
+  </div>
+  <script src="scripts/pledge-flag.js"></script>
+</body>
+
+</html>

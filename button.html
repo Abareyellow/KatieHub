@@ -8,6 +8,7 @@
   <link href="styles/style.css" rel="stylesheet" type="text/css" />
   <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <link href="styles/homepage.css" rel="stylesheet" type="text/css" />
+  <link href="styles/buttons.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -44,11 +45,45 @@
     </div>
   </nav>
 
-  <article>
-    <h2>Welcome!</h2>
-    <p>The homepage is under construction right now but will soon be updated. Please navigate through the website using the naviagtor bar up top.</p>
-</article>
-  
+
+  <div class="container">
+    <h1>HackerRank 10 Days of Javascript Web Dev Projects</h1>
+    <div class="flex-con">
+      <div class="box">
+        <h3>Create a Button</h3>
+        <button id="btn">0</button>
+      </div>
+      <div class="box">
+        <div id="btns">
+          <h3>Buttons Container</h3>
+          <button id="btn1a" class="buttons">1</button>
+          <button id="btn2" class="buttons">2</button>
+          <button id="btn3" class="buttons">3</button>
+          <button id="btn4" class="buttons">4</button>
+          <button id="btn5" class="buttons">5</button>
+          <button id="btn6" class="buttons">6</button>
+          <button id="btn7" class="buttons">7</button>
+          <button id="btn8" class="buttons">8</button>
+          <button id="btn9" class="buttons">9</button>
+        </div>
+      </div>
+      <div class="box">
+        <h3>Binary Calculator</h3>
+        <div id="res"></div>
+        <div id="btnsa">
+          <button id="btn0" class="buttonCal">0</button>
+          <button id="btn1" class="buttonCal">1</button>
+          <button id="btnClr" class="buttonCal">C</button>
+          <button id="btnEql" class="buttonCal">=</button>
+          <button id="btnSum" class="buttonCal">+</button>
+          <button id="btnSub" class="buttonCal">-</button>
+          <button id="btnMul" class="buttonCal">*</button>
+          <button id="btnDiv" class="buttonCal">/</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/buttons.js"></script>
 </body>
 
 </html>
