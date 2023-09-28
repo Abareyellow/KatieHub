@@ -1,0 +1,52 @@
+html {
+  background-color: lightgreen;
+}
+
+#quote-box {
+  width: 35%;
+  height: 30%;
+  margin: 15% auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#text {
+  margin-bottom: 20px;
+  font-size: 27px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#author {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#new-quote {
+  padding: 7px;
+  background-color: inherit;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#new-quote:hover {
+  background-color: lightgrey;
+}
+
+#tweet-quote {
+  padding: 7px;
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: "Josefin Sans", sans-serif;
+  float: right;
+}
+
+#tweet-quote:hover {
+  background-color: lightgrey;
+}
