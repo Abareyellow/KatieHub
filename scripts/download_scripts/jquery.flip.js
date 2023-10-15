@@ -1,7 +1,7 @@
 /*! flip - v1.1.2 - 2016-10-20
 * https://github.com/nnattawat/flip
 * Copyright (c) 2016 Nattawat Nonsung; Licensed MIT */
-(function( $ ) {
+(function($) {
   /*
    * Private attributes and method
    */
@@ -9,12 +9,12 @@
   // Function from David Walsh: http://davidwalsh.name/css-animation-callback licensed with http://opensource.org/licenses/MIT
   var whichTransitionEvent = function() {
     var t, el = document.createElement("fakeelement"),
-    transitions = {
-      "transition"      : "transitionend",
-      "OTransition"     : "oTransitionEnd",
-      "MozTransition"   : "transitionend",
-      "WebkitTransition": "webkitTransitionEnd"
-    };
+      transitions = {
+        "transition": "transitionend",
+        "OTransition": "oTransitionEnd",
+        "MozTransition": "transitionend",
+        "WebkitTransition": "webkitTransitionEnd"
+      };
 
     for (t in transitions) {
       if (el.style[t] !== undefined) {
@@ -330,7 +330,7 @@
   /*
    * jQuery collection methods
    */
-  $.fn.flip = function (options, callback) {
+  $.fn.flip = function(options, callback) {
     if (typeof options === 'function') {
       callback = options;
     }
@@ -366,4 +366,4 @@
     return this;
   };
 
-}( jQuery ));
+}(jQuery));

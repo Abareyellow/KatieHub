@@ -116,11 +116,11 @@ function buttons() {
   let buttons = $('.search');
   let select = document.getElementsByTagName('select');
   buttons[0].addEventListener('click', function() { getLanguage(languageURL, select[0].value, select[1].value) }, false);
-  
-  buttons[1].addEventListener('click', function() {getProject(projectURL, select[2].value, select[3].value, select[4].value, select[5].value)}, false);
+
+  buttons[1].addEventListener('click', function() { getProject(projectURL, select[2].value, select[3].value, select[4].value, select[5].value) }, false);
 
   buttons[2].addEventListener('click', function() { getStudy(studyAbroadURL, select[6].value, select[7].value, select[8].value, select[9].value) }, false);
-  
+
 }
 
 function getProject(url, name, college, department, country) {
@@ -132,13 +132,13 @@ function getProject(url, name, college, department, country) {
         function(obj) {
           if (name == "None") {
             return obj;
-          } else if(name == "Beyer") {
+          } else if (name == "Beyer") {
             return name == obj.Lastname;
-          } else if(name == "Killian") {
+          } else if (name == "Killian") {
             return name == obj.Lastname;
-          } else if(name == "Friedman") {
+          } else if (name == "Friedman") {
             return (name + " ") == obj.Lastname;
-          } else if(name == "Morrow") {
+          } else if (name == "Morrow") {
             return name == obj.Lastname;
           } else {
             return (" " + name) == obj.Lastname;
@@ -219,7 +219,7 @@ function getStudy(url, term, project, country, dates) {
           }
         }
       );
-      
+
       let f2 = f1.filter(
         function(obj) {
           if (project == "None") {

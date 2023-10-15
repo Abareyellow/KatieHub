@@ -35,7 +35,7 @@ function totalCost() {
 }
 
 function costTopping(value) {
-  if(value != 0) {
+  if (value != 0) {
     total += (value * 1)
   }
 }
@@ -51,7 +51,7 @@ function clearForm() {
 
 //Helper functions for total cost
 function tipsAdd(value) {
-  if(!isNaN(value)) {
+  if (!isNaN(value)) {
     let new_number = parseFloat(value);
     total += new_number;
   } else {
@@ -60,13 +60,13 @@ function tipsAdd(value) {
 }
 
 function costSize(value) {
-  if(value == "small") {
+  if (value == "small") {
     total += 10;
-  } else if(value == "medium") {
+  } else if (value == "medium") {
     total += 12;
-  } else if(value == "large") {
+  } else if (value == "large") {
     total += 14;
-  } else if(value == "giant") {
+  } else if (value == "giant") {
     total += 18;
   }
 }
@@ -74,13 +74,13 @@ function costSize(value) {
 function costCrust(value) {
   if (value == "stuffed") {
     total += 1;
-  } else if(value == "square") {
+  } else if (value == "square") {
     total += 0.50;
   }
 }
 
 function costExtra(value) {
-  if(value == "yes") {
+  if (value == "yes") {
     total += 1.40;
   }
 }

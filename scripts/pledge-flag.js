@@ -28,9 +28,9 @@ function maketheCard(name, pledge, background, foreground, font) {
   input.addClass('hidden')
   pledge_card.css('background-color', background)
   firstname.text(name);
-  firstname.css({'color': `${font}`, 'background-color': `${foreground}`})
+  firstname.css({ 'color': `${font}`, 'background-color': `${foreground}` })
   pledge_para.text(`Today I make the pledge to: ${pledge}`);
-  pledge_para.css({'color': `${font}`, 'background-color': `${foreground}`})
+  pledge_para.css({ 'color': `${font}`, 'background-color': `${foreground}` })
 }
 
 function checkInputs(name, pledge, background, foreground, font) {

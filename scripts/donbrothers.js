@@ -13,17 +13,17 @@ function results() {
 
   if ($teamup != "no" && $teamup != "yes") {
     questions.push(11)
-  } 
+  }
   //console.log(points)
 
- if (points < 0) {
-   alert(`You have to anwser these questions: ${questions.join(" ")}`)
- } else {
-  updateStructure(points, $teamup);
- }
+  if (points < 0) {
+    alert(`You have to anwser these questions: ${questions.join(" ")}`)
+  } else {
+    updateStructure(points, $teamup);
+  }
 
   questions = [];
-} 
+}
 
 function findPersonality() {
   let color = $("input[name='color']:checked").val();
@@ -47,13 +47,13 @@ function findPersonality() {
     case "yellow":
       total += 2;
       break;
-    case "black": 
+    case "black":
       total += 3;
       break;
     case "pink":
       total += 5;
       break;
-    case "gold": 
+    case "gold":
       total += 4;
       break;
     case "silver":
@@ -311,14 +311,14 @@ function updateStructure(score, diff) {
     }
   } else if (score >= 16 && score <= 24) {
     //Haruka
-     windowResult("haruka")
+    windowResult("haruka")
   } else if (score == 25) {
     if (diff == "yes") {
       //Haruka
-       windowResult("haruka")
+      windowResult("haruka")
     } else {
       //Tsubasa
-       windowResult("tsubasa")
+      windowResult("tsubasa")
     }
   } else if (score >= 26 && score <= 34) {
     //Tsubasa

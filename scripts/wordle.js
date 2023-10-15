@@ -1,7 +1,7 @@
 let enter = $('.enter');
 //console.log(enter);
 
-var fileContent = $.ajax({type: "GET", url: "https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/6bfa15d263d6d5b63840a8e5b64e04b382fdb079/valid-wordle-words.txt", async: false}, ).responseText;
+var fileContent = $.ajax({ type: "GET", url: "https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/6bfa15d263d6d5b63840a8e5b64e04b382fdb079/valid-wordle-words.txt", async: false },).responseText;
 
 let masterList = fileContent.split('\n');
 let message = "";
@@ -36,21 +36,21 @@ function findSuggestWords() {
 
   let okToGo = checkInputs(firstPlace, secondPlace, thirdPlace, fourthPlace, fifthPlace, letters, badLetters);
   console.log(okToGo)
-  
+
 
   if (okToGo) {
     let wave1 = placedLetterFind(firstPlace, secondPlace, thirdPlace, fourthPlace, fifthPlace, suggestWords);
 
-  let wave2 = valWordsFinds(wave1, letters)
-  console.log(wave2)
+    let wave2 = valWordsFinds(wave1, letters)
+    console.log(wave2)
 
-  let final = eraseGreyLetters(badLetters, wave2)
+    let final = eraseGreyLetters(badLetters, wave2)
 
-  displayData(final);
+    displayData(final);
   } else {
     alert(message)
   }
-  
+
 }
 
 function placedLetterFind(first, second, third, fourth, fifth, list) {
@@ -89,7 +89,7 @@ function placedLetterFind(first, second, third, fourth, fifth, list) {
 function valWordsFinds(words, list) {
   //let foundWords = []
 
-  for(let i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     words = words.filter(word => word.includes(list[i]))
     //console.log(words);
   }
@@ -142,5 +142,5 @@ function checkInputs(p1, p2, p3, p4, p5, letters, bad) {
   }
 
   return true;
-  
+
 }

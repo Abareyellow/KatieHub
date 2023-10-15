@@ -13,7 +13,7 @@ function getQuote() {
     url: "https://api.api-ninjas.com/v1/quotes",
     headers: { "X-Api-Key": "S67VB1bz5XcY9qvOPc5xCA==N5g9O7LkSsgek7vp" },
     contentType: "application/json",
-    success: function (result) {
+    success: function(result) {
       console.log(result);
       quote = result[0];
       console.log(quote);
