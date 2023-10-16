@@ -11,17 +11,17 @@ nav {
   background-color: #FFFF99;
   padding: 10px 15px 10px;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .right {
   float: right;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
-  font-family: 'Special Elite', cursive;
+  font-size: 14px;
 }
 
 .right a {
