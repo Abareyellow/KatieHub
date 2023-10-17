@@ -2,7 +2,7 @@ let quote = {};
 let text = $("#text");
 let author = $("#author");
 let button = $("#new-quote");
-let background = $("html");
+let background = $(".text-primary");
 let tweet = $("#tweet-quote");
 
 button.on("click", getQuote);
