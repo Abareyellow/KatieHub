@@ -1,0 +1,25 @@
+body {
+  font-size: 24px;
+  background-color: #F06292;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+#editor, #preview {
+  margin: 13px 13px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: pink;
+  border: 2px solid black;
+}
+
+#editor {
+  min-height: 300px;
+}
+
+pre, code {
+  background-color: #ffffff;
+}
