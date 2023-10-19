@@ -1,0 +1,75 @@
+.text-primary {
+  background-color: #1B5E20;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+#break-increment, #break-decrement, #session-decrement, #session-increment {
+  width: 30px;
+  height: 30px;
+}
+
+.time-row {
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 25px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#break-label {
+  margin-right: 50px;
+}
+
+#timer-section {
+  width: 340px;
+  margin: 15% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-primary h2, .text-primary h4 {
+  text-align: center;
+  color: yellow;
+}
+
+#session {
+  margin-top: -170px;
+}
+
+#time-left {
+  margin: 1% 48.35%;
+  font-size: 25px;
+  color: yellow;
+}
+
+#start_stop_pause {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#start_stop {
+  font-size: 16px;
+  height: 30px;
+  font-weight: bold;
+  margin-right: 8px;
+  color: black;
+}
+
+button {
+  background-color: #BFD7ED;
+  border: none;
+  border-radius: 10px;
+}

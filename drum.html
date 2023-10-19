@@ -4,25 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Markdown Previewer</title>
-  <link href="styles/markdown.css" rel="stylesheet" type="text/css" />
+  <title>Katie Hub</title>
+  <link href="styles/drum.css" rel="stylesheet" type="text/css" />
   <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <script src="scripts/markdown.js"></script>
-  
 </head>
 
-<body>
+<body class="text-primary">
   <nav>
     <a href="index.html" class="icon">Katie Hub</a>
     <div class="right">
@@ -45,7 +39,7 @@
             <a class="test" tabindex="-1" href="#">Front End Development Libraries <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a tabindex="-1" href="random-quote-generator.html">Random Quote Generator</a></li>
-              <!--<li><a tabindex="-1" href="markdown.html">Markdown Previewer</a></li>-->
+              <li><a tabindex="-1" href="markdown.html">Markdown Previewer</a></li>
               <li><a tabindex="-1" href="drum.html">Drum Machine</a></li>
               <li><a tabindex="-1" href="calculator.html">Calculator</a></li>
               <li><a tabindex="-1" href="timer.html">Pomodoro Timer</a></li>
@@ -77,11 +71,42 @@
     <!--<a href="aboutme.html">About Me</a>-->
     </div>
   </nav>
-  <div id="app">
-    
+
+  <div id="drum-machine">
+    <h4 id="display"></h4>
+    <div id="drum">
+      <button id="Q" class="drum-pad" value="Heater 1">Q
+        <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip" value="Q" id="Q"></audio>
+      </button>
+
+      <button id="W" class="drum-pad" value="Heater 2">W<audio id="W"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip"></audio></button>
+
+      <button id="E" class="drum-pad" value="Header 3">E
+        <audio id="E" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" class="clip"></audio></button>
+
+      <button id="A" class="drum-pad" value="Header 4">A<audio id="A"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" class="clip"></audio></button>
+
+      <button id="S" class="drum-pad" value="Clap">S<audio id="S"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" class="clip"></audio></button>
+
+      <button id="D" class="drum-pad" value="Open HH">D<audio id="D"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" class="clip"></audio></button>
+
+      <button id="Z" class="drum-pad" value="Kick n' Hat">Z<audio id="Z"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" class="clip"></audio></button>
+
+      <button id="X" class="drum-pad" value="Kick">X<audio id="X"
+          src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip"></audio></button>
+
+      <button id="C" class="drum-pad" value="Closed HH">C<audio id="C"
+          src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" class="clip"></audio></button>
+    </div>
   </div>
-  <script type="type/babel" src="scripts/markdown.js"></script>
+
   <script src="scripts/navbar.js"></script>
+  <script src="scripts/drum.js"></script>
 </body>
 
 </html>
