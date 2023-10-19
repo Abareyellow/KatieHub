@@ -14,12 +14,11 @@ body {
 
 
 h1 {
-  display: block;
+  padding: 10px;
   text-align: center;
   border: 3px solid hotpink;
   background-color: lightyellow;
-  margin: auto;
-  margin-top: 15px;
+  margin-left: 100px;
   width: 40%;
 }
 
@@ -28,7 +27,10 @@ article {
   background-color: lightyellow;
 	margin: 1em;
 	padding: 1em;
-  width: 500px
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 table, td {
