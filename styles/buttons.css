@@ -1,9 +1,14 @@
+.text-primary {
+  background-color: #B0E0E6;
+}
+
 .box {
   width: 33%;
 }
 
 .container {
   background-color: white;
+  color: black;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
