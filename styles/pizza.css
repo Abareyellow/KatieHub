@@ -27,9 +27,8 @@ body {
   text-align: center;
   color: #07ba65;
   background-color: #cc0000;
-  margin: auto;
   padding: 10px;
-  
+  font-weight: bold;
 }
 
 .formss {
