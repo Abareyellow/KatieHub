@@ -1,6 +1,90 @@
 let enter = $('.enter');
 //console.log(enter);
 
+$(document).ready(function() {
+  const firstCor = $('#firstCorrect');
+  const secondCor = $('#secondCorrect');
+  const thirdCor = $('#thirdCorrect');
+  const fourthCor = $('#fourthCorrect');
+  const fifthCor = $('#fifthCorrect');
+
+  const firstVal = $('#firstValid');
+  const secondVal = $('#secondValid');
+  const thirdVal = $('#thirdValid');
+  const fourthVal = $('#fourthValid');
+  const fifthVal = $('#fifthValid');
+
+  firstCor.on('input', function() {
+    const inputValue = firstCor.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    firstCor.toggleClass('green-background', isLetter);
+  });
+
+  secondCor.on('input', function() {
+    const inputValue = secondCor.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    secondCor.toggleClass('green-background', isLetter);
+  });
+
+  thirdCor.on('input', function() {
+    const inputValue = thirdCor.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    thirdCor.toggleClass('green-background', isLetter);
+  });
+
+  fourthCor.on('input', function() {
+    const inputValue = fourthCor.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    fourthCor.toggleClass('green-background', isLetter);
+  });
+
+  fifthCor.on('input', function() {
+    const inputValue = fifthCor.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    fifthCor.toggleClass('green-background', isLetter);
+  });
+
+  firstVal.on('input', function() {
+    const inputValue = firstVal.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    firstVal.toggleClass('yellow-background', isLetter);
+  });
+
+  secondVal.on('input', function() {
+    const inputValue = secondVal.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    secondVal.toggleClass('yellow-background', isLetter);
+  });
+
+  thirdVal.on('input', function() {
+    const inputValue = thirdVal.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    thirdVal.toggleClass('yellow-background', isLetter);
+  });
+
+  fourthVal.on('input', function() {
+    const inputValue = fourthVal.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    fourthVal.toggleClass('yellow-background', isLetter);
+  });
+
+  fifthVal.on('input', function() {
+    const inputValue = fifthVal.val();
+    const isLetter = /^[a-zA-Z]$/.test(inputValue);
+
+    fifthVal.toggleClass('yellow-background', isLetter);
+  });
+});
+
 var fileContent = $.ajax({ type: "GET", url: "https://gist.githubusercontent.com/dracos/dd0668f281e685bad51479e5acaadb93/raw/6bfa15d263d6d5b63840a8e5b64e04b382fdb079/valid-wordle-words.txt", async: false },).responseText;
 
 let masterList = fileContent.split('\n');

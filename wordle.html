@@ -5,62 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="styles/style.css" rel="stylesheet" type="text/css" />
   <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <link href="styles/wordle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <style>
-    /* Define the CSS class to turn the input background green */
-    .green-background {
-      background-color: #20dd29;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-
-    .yellow-background {
-      background-color: yellow;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-  </style>
 </head>
 
 <body>
-  <nav>
-    <a href="index.html" class="icon">Katie Hub</a>
-    <div class="right">
-      <div class="dropdown">
-        <button class="dropdown-btn">My Projects</button>
-        <div class="dropdown-options">
-          <a href="shinypokemon.html">Shiny Pokemon Gallery</a>
-          <a href="wordle.html">Wordle Helper</a>
-          <a href="donbrothers-quiz.html">Donbrothers Quiz</a>
-          <a href="pledge-flag.html">Pledge Flag</a>
-        </div>
-      </div>
-      <!--<a href="#">My Project</a>-->
-      <div class="dropdown">
-        <button class="dropdown-btn">School Projects</button>
-        <div class="dropdown-options">
-          <a href="bananaade.html">Bananaade</a>
-          <a href="qep.html">Appstate QEP</a>
-          <a href="pizzashanty.html">Pizza Shanty</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropdown-btn">Online Practice</button>
-        <div class="dropdown-options">
-          <a href="button.html">JavaScript Buttons</a>
-        </div>
-      </div>
-      <a href="aboutme.html">About Me</a>
-    </div>
+  <nav id="master-nav">
+
   </nav>
   <section>
     <h1>Wordle Helper</h1>
@@ -101,91 +58,7 @@
   <div class="box hidden">
   </div>
   <script src="scripts/wordle.js"></script>
-  <script>
-    $(document).ready(function() {
-      const firstCor = $('#firstCorrect');
-      const secondCor = $('#secondCorrect');
-      const thirdCor = $('#thirdCorrect');
-      const fourthCor = $('#fourthCorrect');
-      const fifthCor = $('#fifthCorrect');
-
-      const firstVal = $('#firstValid');
-      const secondVal = $('#secondValid');
-      const thirdVal = $('#thirdValid');
-      const fourthVal = $('#fourthValid');
-      const fifthVal = $('#fifthValid');
-
-      firstCor.on('input', function() {
-        const inputValue = firstCor.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        firstCor.toggleClass('green-background', isLetter);
-      });
-
-      secondCor.on('input', function() {
-        const inputValue = secondCor.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        secondCor.toggleClass('green-background', isLetter);
-      });
-
-      thirdCor.on('input', function() {
-        const inputValue = thirdCor.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        thirdCor.toggleClass('green-background', isLetter);
-      });
-
-      fourthCor.on('input', function() {
-        const inputValue = fourthCor.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        fourthCor.toggleClass('green-background', isLetter);
-      });
-
-      fifthCor.on('input', function() {
-        const inputValue = fifthCor.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        fifthCor.toggleClass('green-background', isLetter);
-      });
-
-      firstVal.on('input', function() {
-        const inputValue = firstVal.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        firstVal.toggleClass('yellow-background', isLetter);
-      });
-
-      secondVal.on('input', function() {
-        const inputValue = secondVal.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        secondVal.toggleClass('yellow-background', isLetter);
-      });
-
-      thirdVal.on('input', function() {
-        const inputValue = thirdVal.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        thirdVal.toggleClass('yellow-background', isLetter);
-      });
-
-      fourthVal.on('input', function() {
-        const inputValue = fourthVal.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        fourthVal.toggleClass('yellow-background', isLetter);
-      });
-
-      fifthVal.on('input', function() {
-        const inputValue = fifthVal.val();
-        const isLetter = /^[a-zA-Z]$/.test(inputValue);
-
-        fifthVal.toggleClass('yellow-background', isLetter);
-      });
-    });
-  </script>
+  <script src="scripts/navbar.js"></script>
 </body>
 
 </html>
