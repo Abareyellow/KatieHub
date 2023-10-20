@@ -1,94 +1,74 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="styles/pizza.css" rel="stylesheet" type="text/css" >
-  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  <link href="styles/pizza.css" rel="stylesheet" type="text/css">
   <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Rammetto+One&family=Special+Elite&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <nav>
-    <a href="index.html" class="icon">Katie Hub</a>
-    <div class="right">
-      <div class="dropdown">
-        <button class="dropdown-btn">My Projects</button>
-        <div class="dropdown-options">
-          <a href="shinypokemon.html">Shiny Pokemon Gallery</a>
-          <a href="wordle.html">Wordle Helper</a>
-          <a href="donbrothers-quiz.html">Donbrothers Quiz</a>
-          <a href="pledge-flag.html">Pledge Flag</a>
-        </div>
-      </div>
-      <!--<a href="#">My Project</a>-->
-      <div class="dropdown">
-        <button class="dropdown-btn">School Projects</button>
-        <div class="dropdown-options">
-          <a href="bananaade.html">Bananaade</a>
-          <a href="qep.html">Appstate QEP</a>
-          <a href="pizzashanty.html">Pizza Shanty</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropdown-btn">Online Practice</button>
-        <div class="dropdown-options">
-          <a href="button.html">JavaScript Buttons</a>
-        </div>
-      </div>
-      <a href="aboutme.html">About Me</a>
-    </div>
+  <nav id="master-nav">
+
   </nav>
+
   <div class="box">
     <h1>Pizza Shanty</h1>
     <div class="formss">
-    <div class="topping">
-      <h3>How many toppings would you like?</h3>
-      <input type="radio" name="topping" value="0" checked>0
-      <input type="radio" name="topping" value="1">1
-      <input type="radio" name="topping" value="2">2
-      <input type="radio" name="topping" value="3">3
-    </div>
-
-    <div class="crust_size">
-      <h3>What size pizza do you want?</h3>
-      <input type="radio" name="size" value="small" checked>Small
-      <input type="radio" name="size" value="medium">Medium
-      <input type="radio" name="size" value="large">Large
-      <input type="radio" name="size" value="giant">Giant
-    </div>
-
-    <div class="crust_type">
-      <h3>What type of crust?</h3>
-      <input type="radio" name="type" value="thin" checked>Thin
-      <input type="radio" name="type" value="pan">Pan
-      <input type="radio" name="type" value="stuffed">Stuffed
-      <input type="radio" name="type" value="square">Square
-    </div>
-
-    <div class="extra_cheese">
-      <h3>Do you want extra cheese?</h3>
-      <input type="radio" name="cheese" value="no" checked>No Extra Cheese
-      <input type="radio" name="cheese" value="yes">Extra Cheese
-    </div>
-
-    <div class="total">
-      <h3>Total & Clear Form</h3>
-      <div class="tips">
-        <h4>Tip: </h4>
-        <input type="text" value="0" id="tips">
+      <div class="topping">
+        <h3>How many toppings would you like?</h3>
+        <input type="radio" name="topping" value="0" checked> 0
+        <input type="radio" name="topping" value="1"> 1
+        <input type="radio" name="topping" value="2"> 2
+        <input type="radio" name="topping" value="3"> 3
       </div>
-      <div class="text">
-        <input type="text" value="0.00" id="text" readonly>
-        <button id="total">Total</button>
-        <button id="clear">Clear</button>
+
+      <div class="crust_size">
+        <h3>What size pizza do you want?</h3>
+        <input type="radio" name="size" value="small" checked> Small
+        <input type="radio" name="size" value="medium"> Medium
+        <input type="radio" name="size" value="large"> Large
+        <input type="radio" name="size" value="giant"> Giant
+      </div>
+
+      <div class="crust_type">
+        <h3>What type of crust?</h3>
+        <input type="radio" name="type" value="thin" checked> Thin
+        <input type="radio" name="type" value="pan"> Pan
+        <input type="radio" name="type" value="stuffed"> Stuffed
+        <input type="radio" name="type" value="square"> Square
+      </div>
+
+      <div class="extra_cheese">
+        <h3>Do you want extra cheese?</h3>
+        <input type="radio" name="cheese" value="no" checked> No Extra Cheese
+        <input type="radio" name="cheese" value="yes"> Extra Cheese
+      </div>
+
+      <div class="total">
+        <h3>Total & Clear Form</h3>
+        <div class="tips">
+          <h4>Tip: </h4>
+          <input type="text" value="0" id="tips">
+        </div>
+        <div class="text">
+          <input type="text" value="0.00" id="text" readonly>
+          <button id="total">Total</button>
+          <button id="clear">Clear</button>
+        </div>
       </div>
     </div>
-  </div>
   </div>
   <script src="scripts/pizza.js"></script>
 </body>
+
 </html>

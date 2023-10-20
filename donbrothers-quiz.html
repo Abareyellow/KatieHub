@@ -5,44 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Katie Hub</title>
-  <link href="styles/style.css" rel="stylesheet" type="text/css" />
-  <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <link href="styles/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="styles/dropdown.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&family=Open+Sans&family=Press+Start+2P&family=Rammetto+One&family=Special+Elite&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="scripts/download_scripts/jquery.flip.js"></script>
 </head>
  
-<body>
-  <nav>
-    <a href="index.html" class="icon">Katie Hub</a>
-    <div class="right">
-      <div class="dropdown">
-        <button class="dropdown-btn">My Projects</button>
-        <div class="dropdown-options">
-          <a href="shinypokemon.html">Shiny Pokemon Gallery</a>
-          <a href="wordle.html">Wordle Helper</a>
-          <a href="donbrothers-quiz.html">Donbrothers Quiz</a>
-          <a href="pledge-flag.html">Pledge Flag</a>
-        </div>
-      </div>
-      <!--<a href="#">My Project</a>-->
-      <div class="dropdown">
-        <button class="dropdown-btn">School Projects</button>
-        <div class="dropdown-options">
-          <a href="bananaade.html">Bananaade</a>
-          <a href="qep.html">Appstate QEP</a>
-          <a href="pizzashanty.html">Pizza Shanty</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropdown-btn">Online Practice</button>
-        <div class="dropdown-options">
-          <a href="button.html">JavaScript Buttons</a>
-        </div>
-      </div>
-      <a href="aboutme.html">About Me</a>
-    </div>
+<body class="text-primary">
+  <nav id="master-nav">
+
   </nav>
 
   <div class="quiz">
@@ -56,110 +31,110 @@
   <form action="#index">
     <label for="color">
       <p><span class="title">1</span>What is your favorite color?  <span class="require">*</span></p>
-      <input type="radio" name="color" value="red" id="red">Red<br>
-      <input type="radio" name="color" value="blue" id="blue">Blue<br>
-      <input type="radio" name="color" value="yellow" id="yellow">Yellow<br>
-      <input type="radio" name="color" value="black" id="black">Black<br>
-      <input type="radio" name="color" value="pink" id="pink">Pink<br>
-      <input type="radio" name="color" value="gold" id="gold">Gold<br>
-      <input type="radio" name="color" value="silver" id="silver">Silver<br>
+      <input type="radio" name="color" value="red" id="red"> Red<br>
+      <input type="radio" name="color" value="blue" id="blue"> Blue<br>
+      <input type="radio" name="color" value="yellow" id="yellow"> Yellow<br>
+      <input type="radio" name="color" value="black" id="black"> Black<br>
+      <input type="radio" name="color" value="pink" id="pink"> Pink<br>
+      <input type="radio" name="color" value="gold" id="gold"> Gold<br>
+      <input type="radio" name="color" value="silver" id="silver"> Silver<br>
     </label>
 
     <label for="creature">
       <p><span class="title">2</span>What is your favorite creature?<span class="require">*</span></p>
-      <input type="radio" name="creature" value="monkey" id="monkey">Monkey<br>
-      <input type="radio" name="creature" value="oni" id="oni">Oni (Troll)<br>
-      <input type="radio" name="creature" value="dog" id="dog">Dog<br>
-      <input type="radio" name="creature" value="pheasant" id="pheasant">Pheasant<br>
-      <input type="radio" name="creature" value="dragon" id="dragon">Dragon<br>
-      <input type="radio" name="creature" value="tiger" id="tiger">Tiger<br>
-      <input type="radio" name="creature" value="human" id="human">I don't like animals other than humans<br>
+      <input type="radio" name="creature" value="monkey" id="monkey"> Monkey<br>
+      <input type="radio" name="creature" value="oni" id="oni"> Oni (Troll)<br>
+      <input type="radio" name="creature" value="dog" id="dog"> Dog<br>
+      <input type="radio" name="creature" value="pheasant" id="pheasant"> Pheasant<br>
+      <input type="radio" name="creature" value="dragon" id="dragon"> Dragon<br>
+      <input type="radio" name="creature" value="tiger" id="tiger"> Tiger<br>
+      <input type="radio" name="creature" value="human" id="human"> I don't like animals other than humans<br>
     </label>
 
     <label for="jobs">
       <p><span class="title">3</span>Which job would you like to take on?<span class="require">*</span></p>
-      <input type="radio" name="jobs" value="delivery" id="delivery">Delivery Man/Woman<br>
-      <input type="radio" name="jobs" value="manga" id="manga">Manga Artist<br>
-      <input type="radio" name="jobs" value="consultant" id="consultant">Consultant<br>
-      <input type="radio" name="jobs" value="volunteer" id="volunteer">Volunteer<br>
-      <input type="radio" name="jobs" value="criminal" id="criminal">Criminal<br>
-      <input type="radio" name="jobs" value="hero" id="hero">Super Hero/Heroine<br>
+      <input type="radio" name="jobs" value="delivery" id="delivery"> Delivery Man/Woman<br>
+      <input type="radio" name="jobs" value="manga" id="manga"> Manga Artist<br>
+      <input type="radio" name="jobs" value="consultant" id="consultant"> Consultant<br>
+      <input type="radio" name="jobs" value="volunteer" id="volunteer"> Volunteer<br>
+      <input type="radio" name="jobs" value="criminal" id="criminal">  Criminal<br>
+      <input type="radio" name="jobs" value="hero" id="hero"> Super Hero/Heroine<br>
     </label>
 
     <label for="weakness">
       <p><span class="title">4</span>What is your weakness?<span class="require">*</span></p>
-      <input type="radio" name="weakness" value="good" id="good">Good at Everything to a point it bothers your peers<br>
-      <input type="radio" name="weakness" value="analytical" id="analytical">To analytical<br>
+      <input type="radio" name="weakness" value="good" id="good"> Good at Everything to a point it bothers your peers<br>
+      <input type="radio" name="weakness" value="analytical" id="analytical">   To analytical<br>
       <input type="radio" name="weakness" value="childish" id="childish">Childish<br>
-      <input type="radio" name="weakness" value="trust" id="trust">You Don't Trust Others<br>
-      <input type="radio" name="weakness" value="doubt" id="doubt">Self Doubt<br>
-      <input type="radio" name="weakness" value="naive" id="naive">To naive<br>
+      <input type="radio" name="weakness" value="trust" id="trust"> You Don't Trust Others<br>
+      <input type="radio" name="weakness" value="doubt" id="doubt"> Self Doubt<br>
+      <input type="radio" name="weakness" value="naive" id="naive"> To naive<br>
     </label>
 
     <label for="activity">
       <p><span class="title">5</span>What is your favorite activity?<span class="require">*</span></p>
-      <input type="radio" name="activity" value="everything" id="everything">Your Good at Everything<br>
-      <input type="radio" name="activity" value="poetry" id="poetry">Poetry<br>
-      <input type="radio" name="activity" value="drawing" id="drawing">Drawing<br>
-      <input type="radio" name="activity" value="running" id="running">Running<br>
-      <input type="radio" name="activity" value="love-time" id="love-time">Spending Time with Love Ones<br>
-      <input type="radio" name="activity" value="cosplay" id="cosplay">Cosplay<br>
+      <input type="radio" name="activity" value="everything" id="everything"> Your Good at Everything<br>
+      <input type="radio" name="activity" value="poetry" id="poetry"> Poetry<br>
+      <input type="radio" name="activity" value="drawing" id="drawing"> Drawing<br>
+      <input type="radio" name="activity" value="running" id="running"> Running<br>
+      <input type="radio" name="activity" value="love-time" id="love-time"> Spending Time with Love Ones<br>
+      <input type="radio" name="activity" value="cosplay" id="cosplay"> Cosplay<br>
     </label>
 
     <label for="describe">
       <p><span class="title">6</span>What word describes you?<span class="require">*</span></p>
-      <input type="radio" name="describe" value="blood" id="blood">Hot-blooded<br>
-      <input type="radio" name="describe" value="humble" id="humble">Humble<br>
-      <input type="radio" name="describe" value="cool" id="cool">Cool<br>
-      <input type="radio" name="describe" value="helpful" id="helpful">Helpful<br>
-      <input type="radio" name="describe" value="erudite" id="erudite">Erudite<br>
-      <input type="radio" name="describe" value="honest" id="honest">Honest<br>
+      <input type="radio" name="describe" value="blood" id="blood"> Hot-blooded<br>
+      <input type="radio" name="describe" value="humble" id="humble"> Humble<br>
+      <input type="radio" name="describe" value="cool" id="cool"> Cool<br>
+      <input type="radio" name="describe" value="helpful" id="helpful"> Helpful<br>
+      <input type="radio" name="describe" value="erudite" id="erudite"> Erudite<br>
+      <input type="radio" name="describe" value="honest" id="honest"> Honest<br>
     </label>
 
     <label for="powers">
       <p><span class="title">7</span>How would you like to receive your powers?<span class="require">*</span></p>
-      <input type="radio" name="powers" value="unknown" id="unknown">You just have them<br>
-      <input type="radio" name="powers" value="discovery" id="discovery">Discovery<br>
-      <input type="radio" name="powers" value="high-point" id="high-point">Receive them at a high point in your life<br>
-      <input type="radio" name="powers" value="low-point" id="low-point">Receive them at a low point in your life<br>
-      <input type="radio" name="powers" value="random" id="random">Randomly recieve them<br>
-      <input type="radio" name="powers" value="achievement" id="achievement">Earn Them<br>
+      <input type="radio" name="powers" value="unknown" id="unknown"> You just have them<br>
+      <input type="radio" name="powers" value="discovery" id="discovery"> Discovery<br>
+      <input type="radio" name="powers" value="high-point" id="high-point"> Receive them at a high point in your life<br>
+      <input type="radio" name="powers" value="low-point" id="low-point"> Receive them at a low point in your life<br>
+      <input type="radio" name="powers" value="random" id="random"> Randomly recieve them<br>
+      <input type="radio" name="powers" value="achievement" id="achievement"> Earn Them<br>
     </label>
 
     <label for="friend">
       <p><span class="title">8</span>What would you do if a friend needs help?<span class="require">*</span></p>
-      <input type="radio" name="friend" value="be-honest" id="be-honest">Be Honest With Them<br>
-      <input type="radio" name="friend" value="enlighten" id="enlighten">Enlighten Them<br>
-      <input type="radio" name="friend" value="kind" id="kind">Guide them with kindness<br>
-      <input type="radio" name="friend" value="roleplay" id="roleplay">Roleplay<br>
-      <input type="radio" name="friend" value="plan" id="plan">Make a plan for them<br>
-      <input type="radio" name="friend" value="motivate" id="motivate">Motivate them<br>
+      <input type="radio" name="friend" value="be-honest" id="be-honest"> Be Honest With Them<br>
+      <input type="radio" name="friend" value="enlighten" id="enlighten"> Enlighten Them<br>
+      <input type="radio" name="friend" value="kind" id="kind"> Guide them with kindness<br>
+      <input type="radio" name="friend" value="roleplay" id="roleplay"> Roleplay<br>
+      <input type="radio" name="friend" value="plan" id="plan"> Make a plan for them<br>
+      <input type="radio" name="friend" value="motivate" id="motivate"> Motivate them<br>
     </label>
 
     <label for="using">
       <p><span class="title">9</span>How would you uses your powers?<span class="require">*</span></p>
-      <input type="radio" name="using" value="dont" id="dont">Don't Use Them<br>
-      <input type="radio" name="using" value="good" id="good">Use them to the greater good<br>
-      <input type="radio" name="using" value="situation" id="situation">Use them when the time is right<br>
-      <input type="radio" name="using" value="escape" id="escape">Escape from situation<br>
-      <input type="radio" name="using" value="support" id="support">Support your partner<br>
-      <input type="radio" name="using" value="train" id="train">Train with them<br>
+      <input type="radio" name="using" value="dont" id="dont"> Don't Use Them<br>
+      <input type="radio" name="using" value="good" id="good"> Use them to the greater good<br>
+      <input type="radio" name="using" value="situation" id="situation"> Use them when the time is right<br>
+      <input type="radio" name="using" value="escape" id="escape"> Escape from situation<br>
+      <input type="radio" name="using" value="support" id="support"> Support your partner<br>
+      <input type="radio" name="using" value="train" id="train"> Train with them<br>
     </label>
 
     <label for="worst">
       <p><span class="title">10</span>What would be the worst thing to happened to you?<span class="require">*</span></p>
-      <input type="radio" name="worst" value="accept" id="accept">People don't accept you<br>
-      <input type="radio" name="worst" value="odd" id="odd">Teaming up with someone you do not like<br>
-      <input type="radio" name="worst" value="plagiarism" id="plagiarism">Copying someone's else idea<br>
-      <input type="radio" name="worst" value="lose" id="lose">Lose everything<br>
-      <input type="radio" name="worst" value="love" id="love">Your romantic partner is not who they say they are<br>
-      <input type="radio" name="worst" value="fake" id="fake">Everything you know was an illusion<br>
+      <input type="radio" name="worst" value="accept" id="accept"> People don't accept you<br>
+      <input type="radio" name="worst" value="odd" id="odd"> Teaming up with someone you do not like<br>
+      <input type="radio" name="worst" value="plagiarism" id="plagiarism"> Copying someone's else ideas<br>
+      <input type="radio" name="worst" value="lose" id="lose"> Lose everything<br>
+      <input type="radio" name="worst" value="love" id="love"> Your romantic partner is not who they say they are<br>
+      <input type="radio" name="worst" value="fake" id="fake"> Everything you know was an illusion<br>
     </label>
 
     <label for="team-up">
       <p><span class="title">11</span>If you had to team-up with former villians for a battle, would you join them?<span class="require">*</span></p>
-      <input type="radio" name="team-up" value="yes" id="yes">Yes<br>
-      <input type="radio" name="team-up" value="no" id="no">No<br>
+      <input type="radio" name="team-up" value="yes" id="yes"> Yes<br>
+      <input type="radio" name="team-up" value="no" id="no"> No<br>
     </label>
 
     <input type="button" value="Avataro Change">
@@ -302,6 +277,7 @@
     </div>
   </div>
   <script src="scripts/donbrothers.js"></script>
+  <script src="scripts/navbar.js"></script>
 </body>
 
 </html>

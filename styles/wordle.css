@@ -76,3 +76,19 @@ button.enter:hover {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+.green-background {
+  background-color: #20dd29;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.yellow-background {
+  background-color: yellow;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+}
