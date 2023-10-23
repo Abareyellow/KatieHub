@@ -14,7 +14,7 @@ $(function start() {
   setFormProject(projectURL);
   setProjectTable(projectURL, "Search by Project", "project");
   setFormStudy(studyURL);
-  setTable(studyURL, "Study Abroad Opportunities", "study_abroad", study);
+  setTable(studyURL, "Study Abroad Opportunities", "study-abroad", study);
   buttons();
 });
 
@@ -368,7 +368,7 @@ function addFormLanguage(divId, language, prof) {
   form.appendChild(select1);
 
   let label2 = document.createElement('label');
-  label2.textContent = "Choose a level of  roficiency: ";
+  label2.textContent = "Choose a level of Proficiency: ";
   form.appendChild(label2);
 
   let select2 = document.createElement('select');
