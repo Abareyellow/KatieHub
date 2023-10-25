@@ -8,10 +8,6 @@ article {
   padding: 15px;
 }
 
-.hidden {
-  display: none;
-}
-
 img {
   height: 240px;
   margin: 10px;
@@ -32,18 +28,12 @@ h1 {
   background-color: white;
 }
 
-.pok {
-  background-color: white;
-  border: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  font-weight: bold;
-  font-size: 14px;
+h1 {
+  color: black;
 }
 
-.pok:hover {
-  cursor: pointer;
+button {
+  color: black;
 }
 
 h2 {
