@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
 .text-primary {
   background-color: #B0E0E6;
 }
@@ -5,7 +7,8 @@
 article {
   background-color: #FFFF99;
   margin: 30px;
-  padding: 15px;
+  padding: 7px;
+  color: black;
 }
 
 img {
@@ -20,30 +23,53 @@ img {
   flex-wrap: wrap;
 }
 
-h1 {
+article h1 {
   margin-bottom: 20px;
+  font-family: 'Amatic SC', cursive;
 }
 
 .gallery {
   background-color: white;
 }
 
-h1 {
-  color: black;
+.gallery h2 {
+  font-family: 'Amatic SC', cursive;
 }
 
 button {
   color: black;
 }
 
+.button-nav button:hover {
+  text-decoration: underline;
+}
+
+.w-75 .button-nav {
+  margin-bottom: -30px;
+}
+
+.w-75 {
+  margin: 45px;
+}
+
+.button-nav button {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+}
+
 h2 {
   padding-top: 15px;
   padding-left: 45px;
   padding-bottom: 15px;
+  font-family: 'Amatic SC', cursive;
 }
 
 .white-card h1 {
   background-color: white;
+  font-family: 'Amatic SC', cursive;
 }
 
 .white-card .flex {
@@ -66,6 +92,6 @@ h2 {
 }
 
 h4 {
-  font-family: 'Amatic SC', cursive;
   font-size: 30px;
+  font-family: 'Amatic SC', cursive;
 }
